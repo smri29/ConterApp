@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -32,8 +32,8 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       backgroundColor: Colors.white54,
       appBar: AppBar(
-        title: Text('Counter'),
-        backgroundColor: Colors.redAccent,
+        title: const Text('CounterApp'),
+        backgroundColor:Colors.redAccent,
       ),
       body: Center(
         child: Text('Counter $counter'),
@@ -49,9 +49,9 @@ class _HomepageState extends State<Homepage> {
               setState(() {
               });
             },
-            child: Icon(Icons.remove,color: Colors.black,),
+            child: const Icon(Icons.remove,color: Colors.black,),
           ),
-          SizedBox(width: 16,),
+          const SizedBox(width: 16,),
           FloatingActionButton(
             backgroundColor: Colors.white,
             onPressed: (){
@@ -60,7 +60,7 @@ class _HomepageState extends State<Homepage> {
               setState(() {
               });
             },
-            child: Icon(Icons.add,color: Colors.black,),
+            child: const Icon(Icons.add,color: Colors.black,),
           ),
         ],
       ),
